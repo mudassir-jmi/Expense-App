@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"
+    integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP"
+    crossorigin="anonymous"></script>
+    <title> Expense | App </title>
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <span class="navbar-brand mb-0 h1">Expense App</span>
+        <span class="navbar-brand mb-0 h1" id="headingTotal"></span>
+    </nav>
+    <div class="container-fluid bg-light" style="min-height: 100vh">
+        <div class="container">
+            <div class="jumbotron mt-4">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Amount spent" id="inputAmount"
+                        aria-label="Amount spent" aria-describedby="spent in rupee" />
+                    <div class="input-group-append">
+                        <span class="input-group-text">₹</span>
+                    </div>
+                </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">@</span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="spent On" id="inputDesc" aria-label="spent On"
+                        aria-describedby="spent at" />
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-primary" type="button" id="addExpense">+</button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <ul class="list-group" id="expenseTable"></ul>
+            </div>
+        </div>
+    </div>
+<!-- custom js -->
+    <script src="script.js"></script>
+</body>
+</html>
